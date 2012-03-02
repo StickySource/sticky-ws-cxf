@@ -8,21 +8,21 @@
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>net.stickycode.component</groupId>
-	<artifactId>sticky-component-cxf</artifactId>
-	<version>3.2-SNAPSHOT</version>
+	<groupId>net.stickycode.ws</groupId>
+	<artifactId>sticky-ws-cxf</artifactId>
+	<version>3.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>sticky-component-cxf</name>
+	<name>sticky-ws-cxf</name>
 	<description>Class, Field and Method metadata used to remove boilerplate code for construction, configuration, scheduling, 
 monitoring, management and more</description>
-	<url>http://www.StickyCode.net/component/sticky-component-cxf/</url>
+	<url>http://www.StickyCode.net/ws/sticky-ws-cxf/</url>
 	<inceptionYear>2009</inceptionYear>
 
 	<scm>
-		<connection>scm:svn:http://stickycode.googlecode.com/svn/trunk/net.stickycode.component/sticky-component-cxf</connection>
-		<developerConnection>scm:svn:https://stickycode.googlecode.com/svn/trunk/net.stickycode.component/sticky-component-cxf</developerConnection>
-		<url>http://code.google.com/p/stickycode/source/browse/#svn/trunk/net.stickycode.component/sticky-component-cxf</url>
+		<connection>scm:svn:http://stickycode.googlecode.com/svn/trunk/net.stickycode.ws/sticky-ws-cxf</connection>
+		<developerConnection>scm:svn:https://stickycode.googlecode.com/svn/trunk/net.stickycode.ws/sticky-ws-cxf</developerConnection>
+		<url>http://code.google.com/p/stickycode/source/browse/#svn/trunk/net.stickycode.ws/sticky-ws-cxf</url>
 	</scm>
 
 	<dependencies>
@@ -47,7 +47,7 @@ monitoring, management and more</description>
 		<dependency>
 			<groupId>net.stickycode</groupId>
 			<artifactId>sticky-stereotype</artifactId>
-			<version>[1.5,2)</version>
+			<version>[1.16,2)</version>
 		</dependency>
 		<dependency>
 			<groupId>net.stickycode</groupId>
