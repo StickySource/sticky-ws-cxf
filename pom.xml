@@ -28,8 +28,12 @@ monitoring, management and more</description>
 	<dependencies>
 		<dependency>
 			<groupId>org.mockwire</groupId>
+			<!-- 
 			<artifactId>mockwire-spring30</artifactId>
-			<version>[4.2,5)</version>
+			<version>[1,8)</version>
+			 -->
+			<artifactId>mockwire-guice3</artifactId>
+			<version>[1,5)</version>
 			<scope>test</scope>
 		</dependency>
 

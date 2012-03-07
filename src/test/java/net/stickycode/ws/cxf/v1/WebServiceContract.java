@@ -10,10 +10,11 @@
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the Apache License Version 2.0 for the specific language governing permissions and limitations there under.
  */
-package net.stickycode.component.cxf.v1;
+package net.stickycode.ws.cxf.v1;
 
+import javax.jws.WebService;
 
-public class DummyWebService
-    implements WebServiceContract {
+@WebService
+public interface WebServiceContract {
 
 }

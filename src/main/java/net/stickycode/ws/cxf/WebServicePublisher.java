@@ -1,4 +1,4 @@
-package net.stickycode.component.cxf;
+package net.stickycode.ws.cxf;
 
 import java.net.URL;
 import java.util.ArrayList;

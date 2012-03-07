@@ -10,11 +10,31 @@
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the Apache License Version 2.0 for the specific language governing permissions and limitations there under.
  */
-package net.stickycode.component.cxf.v1;
+package net.stickycode.ws.cxf;
 
-import javax.jws.WebService;
+import java.beans.Introspector;
 
-@WebService
-public interface WebServiceContract {
+public class WebServiceExposure {
+
+  private Object implementation;
+
+  private Class<?> contract;
+
+  public WebServiceExposure(Object bean, Class<?> i) {
+    this.implementation = bean;
+    this.contract = i;
+  }
+
+  public Class<?> contract() {
+    return contract;
+  }
+
+  public Object bean() {
+    return implementation;
+  }
+
+  public String name() {
+    return Introspector.decapitalize(implementation.getClass().getSimpleName());
+  }
 
 }
