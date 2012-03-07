@@ -24,10 +24,13 @@ public class WebServicePublisher {
   private Logger log = LoggerFactory.getLogger(WebServicePublisher.class);
 
   @Inject
-  public Bus busProvider;
+  private Bus busProvider;
 
   @Inject
   private WebServiceExposureRepository exposures;
+  
+  @Inject
+  private WebServiceNamingStrategy nameStrategy;
 
   private List<EndpointImpl> webServices = new ArrayList<EndpointImpl>();
 
@@ -49,7 +52,7 @@ public class WebServicePublisher {
 
   private void publish(Object bean, String beanName, Class<?> i) {
     log.info("Publishing {} as web service {}", beanName, i.getSimpleName());
-    String address = "/" + i.getSimpleName() + getLeaf(bean.getClass().getPackage());
+    String address = nameStrategy.deriveAddress(bean, i);
     JaxWsServerFactoryBean factory = createServerFactory(i);
     factory.setServiceClass(i);
 
@@ -78,15 +81,6 @@ public class WebServicePublisher {
       s.setWsdlURL(classpathWsdl);
 
     return s;
-  }
-
-  private String getLeaf(Package p) {
-    String name = p.getName();
-    String version = name.substring(name.lastIndexOf('.') + 1);
-    if (version.matches("^v[\\.0-9]+$"))
-      return "/" + version;
-
-    throw new WebServiceShouldExistInVersionedPackageException(p);
   }
 
 }

@@ -37,7 +37,7 @@ public class WebServicePublisherTest {
   @UnderTest
   WebServicePublisher publisher;
   
-  @UnderTest
+  @Uncontrolled
   public Bus createBus() {
     return BusFactory.getDefaultBus();
   }
