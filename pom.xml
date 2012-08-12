@@ -28,7 +28,7 @@ monitoring, management and more</description>
 	<dependencies>
 		<dependency>
 			<groupId>org.mockwire</groupId>
-			<artifactId>mockwire-spring30</artifactId>
+			<artifactId>mockwire-spring3</artifactId>
 			<version>[7,8)</version>
 			<!-- 
 			<artifactId>mockwire-guice3</artifactId>
@@ -51,7 +51,7 @@ monitoring, management and more</description>
 		<dependency>
 			<groupId>net.stickycode.composite</groupId>
 			<artifactId>sticky-composite-cxf-soap</artifactId>
-			<version>[5.1,6)</version>
+			<version>[6,7)</version>
 		</dependency>
 		<dependency>
 			<groupId>net.stickycode.stereotype</groupId>
