@@ -7,8 +7,8 @@ import java.util.List;
 import javax.annotation.PreDestroy;
 import javax.inject.Inject;
 
-import net.stickycode.stereotype.PostConfigured;
 import net.stickycode.stereotype.StickyComponent;
+import net.stickycode.stereotype.configured.PostConfigured;
 
 import org.apache.cxf.Bus;
 import org.apache.cxf.binding.soap.SoapBindingConstants;

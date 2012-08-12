@@ -1,6 +1,6 @@
 package net.stickycode.ws.cxf;
 
-import net.stickycode.stereotype.component.StickyStrategy;
+import net.stickycode.stereotype.plugin.StickyStrategy;
 
 @StickyStrategy
 public class WebServiceNamingStrategy {
